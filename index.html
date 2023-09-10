@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OHSEA</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="btn">CLOSED</h1>
+
+    <script>
+
+        var btn = document.getElementById("btn");
+
+            btn.onclick = function(){
+                if(btn.classList.contains("neon")){
+                    btn.classList.remove("neon");
+                    btn.innerHTML = "CLOSED";
+                }
+                else{
+                    btn.classList.add("neon");
+                    btn.innerHTML = "OPEN";
+                }
+            }
+
+    </script>
+	
+</body>
+</html>
